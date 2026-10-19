@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-fx="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session Inspector</title>
+  <link rel="preload" href="/static/fonts/orbitron-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="brand">Session Inspector</div>
+    <label class="field grow">
+      <span class="sr">Session</span>
+      <select id="session-select" aria-label="Session"></select>
+    </label>
+    <label class="toggle" title="Switch to the newest session in any project when it starts">
+      <input type="checkbox" id="follow" checked> Follow latest
+    </label>
+    <span class="live" id="live" title="Connection to the local server"><span class="dot"></span><span id="live-text">connecting</span></span>
+    <button class="icon-btn fx" id="fx-btn" aria-pressed="true" title="Visual effects on/off (does not change the data colours)">FX</button>
+  </header>
+
+  <main>
+    <section class="session-hero" id="session-hero">
+      <div class="scene" id="scene" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="ground"><div class="grid"></div></div>
+      </div>
+      <section class="meta" id="meta"></section>
+      <section class="kpis" id="kpis" aria-label="Session totals"></section>
+    </section>
+
+    <section class="keybar" id="keybar">
+      <div class="controls">
+        <span class="ctl-label">View</span>
+        <div class="seg" role="group" aria-label="Bar order">
+          <button data-view="grouped" class="on" title="One segment per content type, same order in every bar">By type</button>
+          <button data-view="timeline" title="Content in the order it is sent to the model">Payload order</button>
+        </div>
+        <span class="ctl-label">Scale</span>
+        <div class="seg" role="group" aria-label="Bar scale">
+          <button data-scale="peak" class="on" title="Longest bar = biggest request in this session">Session peak</button>
+          <button data-scale="window" title="Full width = the model's context window">Context window</button>
+        </div>
+        <label class="toggle"><input type="checkbox" id="show-agents" checked> Subagents</label>
+        <label class="toggle"><input type="checkbox" id="autoscroll" checked> Auto-scroll</label>
+      </div>
+      <div class="legend" id="legend" aria-label="Legend"></div>
+    </section>
+
+    <section class="board">
+      <div class="rows" id="rows" aria-label="Requests"></div>
+      <aside class="side">
+        <div class="panel" id="top-panel">
+          <h2 id="top-title">Largest items</h2>
+          <p class="hint" id="top-hint">In the latest request. Click a request label to change.</p>
+          <table class="top" id="top-table"><tbody></tbody></table>
+        </div>
+        <div class="panel help">
+          <h2>How to read this</h2>
+          <ul>
+            <li>One bar = one API request. Width = all input tokens the model read.</li>
+            <li>The thin strip under each bar shows the cache: <b>read</b> (cheap, dark), <b>written</b> (extra cost, mid), <b>not cached</b> (full price, bright).</li>
+            <li>Bar totals are exact (from the log). The split into colours is an estimate (≈).</li>
+            <li>Faint vertical lines mark every 50k or 100k tokens.</li>
+            <li>Click a segment to see what is inside. Click a request label for its numbers.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div class="drawer" id="drawer" aria-hidden="true" inert>
+    <div class="drawer-head">
+      <div id="drawer-title"></div>
+      <button class="icon-btn" id="drawer-close" aria-label="Close">✕</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </div>
+
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

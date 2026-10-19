@@ -1,0 +1,67 @@
+seat,model,effort,cost_usd,minutes,output_tokens,score_0_6,playable,finished,note
+A1,haiku,low,,,,,,,
+A2,haiku,low,,,,,,,
+A3,haiku,medium,,,,,,,
+A4,haiku,medium,,,,,,,
+A5,haiku,high,,,,,,,
+A6,haiku,high,,,,,,,
+B1,sonnet,low,,,,,,,
+B2,sonnet,low,,,,,,,
+B3,sonnet,medium,,,,,,,
+B4,sonnet,medium,,,,,,,
+B5,sonnet,high,,,,,,,
+B6,sonnet,high,,,,,,,
+C1,opus,low,,,,,,,
+C2,opus,low,,,,,,,
+C3,opus,medium,,,,,,,
+C4,opus,medium,,,,,,,
+C5,opus,high,,,,,,,
+C6,opus,high,,,,,,,
+D1,haiku,low,,,,,,,
+D2,haiku,low,,,,,,,
+D3,haiku,medium,,,,,,,
+D4,haiku,medium,,,,,,,
+D5,haiku,high,,,,,,,
+D6,haiku,high,,,,,,,
+E1,sonnet,low,,,,,,,
+E2,sonnet,low,,,,,,,
+E3,sonnet,medium,,,,,,,
+E4,sonnet,medium,,,,,,,
+E5,sonnet,high,,,,,,,
+E6,sonnet,high,,,,,,,
+F1,opus,low,,,,,,,
+F2,opus,low,,,,,,,
+F3,opus,medium,,,,,,,
+F4,opus,medium,,,,,,,
+F5,opus,high,,,,,,,
+F6,opus,high,,,,,,,
+G1,haiku,low,,,,,,,
+G2,haiku,low,,,,,,,
+G3,haiku,medium,,,,,,,
+G4,haiku,medium,,,,,,,
+G5,haiku,high,,,,,,,
+G6,haiku,high,,,,,,,
+H1,sonnet,low,,,,,,,
+H2,sonnet,low,,,,,,,
+H3,sonnet,medium,,,,,,,
+H4,sonnet,medium,,,,,,,
+H5,sonnet,high,,,,,,,
+H6,sonnet,high,,,,,,,
+J1,opus,low,,,,,,,
+J2,opus,low,,,,,,,
+J3,opus,medium,,,,,,,
+J4,opus,medium,,,,,,,
+J5,opus,high,,,,,,,
+J6,opus,high,,,,,,,
+REF-FABLE,fable,medium,,,,,,,REFERENCE row: Fable 5.1 medium; built before the workshop with the LAB2 steps on a Premium seat
+REF-OPUS,opus,xhigh,,,,,,,REFERENCE row: Opus 5.5 xhigh; built before the workshop with the LAB2 steps on a Premium seat
+,,,,,,,,,challenge row 1: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 2: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 3: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 4: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 5: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 6: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 7: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 8: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 9: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins
+,,,,,,,,,challenge row 10: race.sh with another cell or your own prompt (RACE_PROMPT); lowest cost for a 6 of 6 game wins

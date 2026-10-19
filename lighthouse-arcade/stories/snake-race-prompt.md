@@ -1,0 +1,1 @@
+Implement SNAKE-01 to SNAKE-06 from the stories folder in games/snake/index.html. The stories are approved. Build the game in this run. Use one HTML file with inline CSS and JavaScript. Do not run shell commands. Do not ask questions. When you finish, write one line that lists the stories you implemented.
