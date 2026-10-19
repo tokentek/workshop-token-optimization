@@ -7,6 +7,8 @@ Made for the token-optimization workshop.
 Each API request is one bar. The bar shows everything the model read for that request. Every new
 request adds a new bar below, so you can see the context grow.
 
+![Session Inspector: one bar per request, split by content type](assets/screenshot.png)
+
 ## Install Python
 
 The dashboard needs Python 3.9 or newer. It uses no other packages.
@@ -139,3 +141,4 @@ The last test runs the parser over all logs in `~/.claude/projects` (skipped if 
 | `inspector/pricing.py`, `pricing.json` | Cost estimate |
 | `static/` | The web page (plain HTML, CSS and JavaScript) |
 | `static/fonts/` | Orbitron display font (SIL Open Font License, see `OFL-Orbitron.txt`), served locally |
+| `assets/screenshot.png` | The screenshot in this README |
