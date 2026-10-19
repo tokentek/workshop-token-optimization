@@ -29,6 +29,8 @@ Start with the prerequisites and prework in [`lighthouse-arcade/README.md`](ligh
 
 Session Inspector reads the JSONL session logs that Claude Code writes to `~/.claude/projects` and shows each API request as one bar. You can see the context grow, what is cached and what each request costs. Use it next to Lab 1 and Lab 2.
 
+![Session Inspector: one bar per request, split by content type](session-inspector/assets/screenshot.png)
+
 It needs Python 3.9 or newer and nothing else:
 
 ```bash
